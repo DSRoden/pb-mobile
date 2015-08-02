@@ -880,3 +880,17 @@ fa-app {
   overflow: hidden;
   height: 300px;
 }
+@media (min-width: 321px) {
+  .go-back {
+    bottom: 22% ! important;
+    left: 15% ! important;
+  }
+  .spotlight-time {
+    bottom: 22% ! important;
+    right: 15% ! important;
+  }
+  .save {
+    bottom: 22% ! important;
+    left: 70% ! important;
+  }
+}
