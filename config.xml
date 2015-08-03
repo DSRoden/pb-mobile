@@ -12,4 +12,6 @@
     <preference name="webviewbounce" value="false"/>
     <preference name="UIWebViewBounce" value="false"/>
     <preference name="DisallowOverscroll" value="true"/>
+    <preference name="Fullscreen" value="true"/>
+    <preference name="StatusBarStyle" value="lightcontent" />
 </widget>

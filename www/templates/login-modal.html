@@ -18,7 +18,7 @@
               <div ng-style="{'margin-top' : '{{titlePosition}}px'}" class="title">Spotlight</div>
               <div class="logo"></div>
               <div class="login-username">
-                <input type="text" ng-model="user.username" placeholder="User name" class="account-input">
+                <input type="text" ng-focus="inputSelected()" ng-model="user.username" placeholder="User name" class="account-input">
               </div>
               <div class="login-password">
                 <input type="password" ng-model="user.password" placeholder="Password" class="account-input">

@@ -3,7 +3,15 @@
   'use strict';
 
   angular.module('spotlight-famous')
-  .controller('LoginCtrl', ['$scope', '$timeout', '$location', '$famous', '$timeline', '$state', 'ngDialog', function($scope , $timeout, $location, $famous, $timeline, $state, ngDialog){
+  .controller('LoginCtrl', ['$scope', '$timeout', '$location', '$famous', '$timeline', '$state', 'ngDialog', '$cordovaKeyboard', function($scope , $timeout, $location, $famous, $timeline, $state, ngDialog, $cordovaKeyboard){
+    document.addEventListener('deviceready', function(){
+      $cordovaKeyboard.hideAccessoryBar(true);
+    }, false);
+
+    $scope.inputSelected = function(){
+      $cordovaKeyboard.hideAccessoryBar(true);
+    };
+
     $scope.spotlightWinnerMarginTop = 0;
     $scope.spotlightWinnerCardHeight = 0;
     $scope.spotlightWinnerBackArrow = 0;

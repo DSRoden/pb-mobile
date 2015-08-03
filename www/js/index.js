@@ -3,7 +3,7 @@
 (function(){
   'use strict';
 
-  angular.module('spotlight-famous', ['ui.router', 'famous.angular', 'spotlightFilters', 'ngDialog'])
+  angular.module('spotlight-famous', ['ui.router', 'famous.angular', 'ngDialog', 'ngCordova'])
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider, $state){
     $urlRouterProvider.otherwise('/');
 
@@ -12,7 +12,10 @@
     .state('winnerOnboarding',     {url:'/',         templateUrl:'templates/winner-onboarding.html', controller:'OnboardingCtrl'})
     .state('categories',     {url:'/',         templateUrl:'templates/categories.html', controller:'OnboardingCtrl'});
   }])
-  .run(function(){
+  .run(['$cordovaKeyboard', function($cordovaKeyboard){
     FastClick.attach(document.body);
-  });
+    // document.addEventListener('deviceready', function(){
+    //   $cordovaKeyboard.hideAccessoryBar(true);
+    // }, false);
+  }]);
 })();

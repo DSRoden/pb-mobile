@@ -1,7 +1,7 @@
 {
-  "name": "spotlight-famous",
+  "name": "spotlight-mobile-app",
   "version": "1.0.0",
-  "description": "Spotlight App",
+  "description": "spotlight social network",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.8.11",
