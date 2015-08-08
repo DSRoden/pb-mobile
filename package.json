@@ -1,7 +1,7 @@
 {
-  "name": "spotlight-mobile-app",
+  "name": "famous-angular-cordova",
   "version": "1.0.0",
-  "description": "spotlight social network",
+  "description": "mobile template",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.8.11",

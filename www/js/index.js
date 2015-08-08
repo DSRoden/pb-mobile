@@ -3,14 +3,12 @@
 (function(){
   'use strict';
 
-  angular.module('spotlight-famous', ['ui.router', 'famous.angular', 'ngDialog', 'ngCordova'])
+  angular.module('cofang', ['ui.router', 'famous.angular', 'ngDialog', 'ngCordova'])
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider, $state){
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-    .state('home',     {url:'/',         templateUrl:'templates/home.html', controller:'HomeCtrl'})
-    .state('winnerOnboarding',     {url:'/',         templateUrl:'templates/winner-onboarding.html', controller:'OnboardingCtrl'})
-    .state('categories',     {url:'/',         templateUrl:'templates/categories.html', controller:'OnboardingCtrl'});
+    .state('main',     {url:'/',         templateUrl:'templates/main.html', controller:'HomeCtrl'});
   }])
   .run(['$cordovaKeyboard', function($cordovaKeyboard){
     FastClick.attach(document.body);
