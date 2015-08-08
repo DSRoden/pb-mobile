@@ -8,7 +8,7 @@
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-    .state('main',     {url:'/',         templateUrl:'templates/main.html', controller:'HomeCtrl'});
+    .state('main',     {url:'/',         templateUrl:'templates/main.html', controller:'MainCtrl'});
   }])
   .run(['$cordovaKeyboard', function($cordovaKeyboard){
     FastClick.attach(document.body);

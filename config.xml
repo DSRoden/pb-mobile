@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.spotlight" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Spotlight</name>
+<widget id="io.cordova.cofang" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>COFANG</name>
     <description>
         Enter a random reality.
     </description>
-    <author email="daniel.s.roden@gmail.org" href="www.spotlighttheapp.com">
+    <author email="daniel.s.roden@gmail.org" href="">
         DSRoden
     </author>
     <content src="index.html" />
