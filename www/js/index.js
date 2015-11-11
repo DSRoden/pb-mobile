@@ -3,7 +3,7 @@
 (function(){
   'use strict';
 
-  angular.module('cofang', ['ui.router', 'famous.angular', 'ngDialog', 'ngCordova'])
+  angular.module('pb', ['ui.router', 'famous.angular', 'ngDialog', 'ngCordova'])
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider, $state){
     $urlRouterProvider.otherwise('/');
 
